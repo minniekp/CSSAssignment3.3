@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>DropDown Button</title>
+	<style type="text/css">
+		.dropbtn {
+			background-color: #FF0000;
+			color: white;
+			border: none;
+			padding: 16px;
+			font-size: 16px;
+			cursor: pointer;
+        }
+        .dropdown {
+        	position: relative;
+        	display: inline-block;
+        }
+        .dropdown-content {
+        	display: none;
+        	position: absolute;
+        	background-color: #f9f9f9;
+        	min-width: 200px;
+        	z-index: 2;
+        }
+        .dropdown-content p{
+        	color: black;
+        	padding: 12px 16px;
+        	display: block;
+        	text-decoration: none;
+        }
+        .dropdown-content p:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+	</style>
+</head>
+<body>
+	<h3>Dropdown Menu</h3>
+	<p>Place the mouse over the drop down button to open the dropdown menu</p>
+    <!--Parent div -->
+	<div class="dropdown">
+		<!-- Dropdown button -->
+		<button class="dropbtn">DropDown</button>
+		<!--Child Div -->
+		<div class="dropdown-content">
+			<p>HTML5</p>
+			<p>CSS3</p>
+			<p>JAVASCRIPT</p>
+		</div>
+	</div>
+</body>
+</html>
